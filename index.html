@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="vector">
+          <img src="./images/Vector 1.png" alt="" />
+        </div>
+        <div class="calculator">
+          <div>
+            <div class="numbers">
+              <span>=</span>
+              <input type="text" id="display" readonly />
+            </div>
+            <div class="line">
+              <hr />
+            </div>
+            <div class="mainCalc">
+              <div class="row">
+                <button class="funcBtn" onclick="clearDisplay()">C</button
+                ><button class="funcBtn" onclick="appendToDisplay('/')">
+                  /</button
+                ><button class="funcBtn" onclick="appendToDisplay('%')">
+                  %</button
+                ><button class="funcBtn" onclick="appendToDisplay('*')">
+                  X
+                </button>
+              </div>
+
+              <div class="row">
+                <button class="numBtn" onclick="appendToDisplay('7')">7</button
+                ><button class="numBtn" onclick="appendToDisplay('8')">8</button
+                ><button class="numBtn" onclick="appendToDisplay('9')">9</button
+                ><button class="funcBtn" onclick="double()">
+                  &PlusMinus;
+                </button>
+              </div>
+              <div class="row">
+                <button class="numBtn" onclick="appendToDisplay('4')">4</button
+                ><button class="numBtn" onclick="appendToDisplay('5')">5</button
+                ><button class="numBtn" onclick="appendToDisplay('6')">6</button
+                ><button class="funcBtn" onclick="appendToDisplay('-')">
+                  &minus;
+                </button>
+              </div>
+              <div class="row">
+                <button class="numBtn" onclick="appendToDisplay('1')">1</button
+                ><button class="numBtn" onclick="appendToDisplay('2')">2</button
+                ><button class="numBtn" onclick="appendToDisplay('3')">3</button
+                ><button class="funcBtn" onclick="appendToDisplay('+')">
+                  &plus;
+                </button>
+              </div>
+              <div class="row">
+                <button class="numBtn" onclick="appendToDisplay('.')">.</button
+                ><button class="numBtn" onclick="appendToDisplay('0')">0</button
+                ><button class="funcBtn" onclick="deleteLast()">
+                  &leftarrow;</button
+                ><button class="funcBtn" onclick="calculate()">
+                  =
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

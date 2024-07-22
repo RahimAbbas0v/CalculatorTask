@@ -1,0 +1,85 @@
+.main {
+  display: flex;
+}
+.vector {
+  position: relative;
+  display: flex;
+  top: 70%;
+  left: 20%;
+}
+.vector > img {
+  height: 560px;
+}
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  height: 596px;
+  width: 364px;
+  background-color: rgba(50, 50, 50, 1);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.numbers {
+  display: flex;
+  padding: 50% 50px 0px;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.numbers > span {
+  font-size: 27px;
+}
+.line {
+  padding: 0px 50px;
+  margin-top: 10px;
+}
+.line hr {
+  background-color: rgba(116, 235, 213, 1);
+  border: 1px solid rgba(116, 235, 213, 1);
+}
+.row {
+  padding: 6px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .funcBtn {
+  background-color: rgba(116, 235, 213, 1);
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  font-size: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.row .numBtn {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  font-size: 20px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+input {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 38px;
+  width: 200px;
+  text-align: right;
+}
+input:focus {
+  outline: none;
+}
